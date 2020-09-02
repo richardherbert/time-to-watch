@@ -2,9 +2,7 @@ import React from 'react';
 import Movie from '../models/Movie';
 
 interface MovieCardProps {
-  movie: Movie,
-  selected: boolean,
-  onClickSelect: (movie: Movie, select: boolean) => void
+  movie: Movie
 }
 
 function MovieCard(props: MovieCardProps) {
@@ -12,9 +10,6 @@ function MovieCard(props: MovieCardProps) {
     <>
       <p>{props.movie.title}</p>
       <p>{props.movie.runtime}</p>
-      <button onClick={() => props.onClickSelect(props.movie, !props.selected)}>
-        {props.selected ? 'Deselect' : 'Select'}
-      </button>
     </>
   );
 }
