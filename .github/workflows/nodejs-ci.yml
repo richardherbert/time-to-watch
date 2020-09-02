@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Run all integration tests
 
 on: pull_request
 
@@ -6,9 +6,17 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js environment
+        uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm ci
-      - run: npm test
+
+      - name: Test
+        run: |
+          npm ci
+          npm test
+        env:
+          REACT_APP_TMDB_V3_API_KEY: ${{ secrets.REACT_APP_TMDB_V3_API_KEY }}
