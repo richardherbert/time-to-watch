@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/time-to-watch/static/css/main.e06b02bb.chunk.css",
+    "main.js": "/time-to-watch/static/js/main.13c72169.chunk.js",
+    "main.js.map": "/time-to-watch/static/js/main.13c72169.chunk.js.map",
+    "runtime-main.js": "/time-to-watch/static/js/runtime-main.da522a46.js",
+    "runtime-main.js.map": "/time-to-watch/static/js/runtime-main.da522a46.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/time-to-watch/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.b7258a78.chunk.js": "/time-to-watch/static/js/2.b7258a78.chunk.js",
+    "static/js/2.b7258a78.chunk.js.map": "/time-to-watch/static/js/2.b7258a78.chunk.js.map",
+    "index.html": "/time-to-watch/index.html",
+    "precache-manifest.bf1d58de89a1b52279f05285ee3598f7.js": "/time-to-watch/precache-manifest.bf1d58de89a1b52279f05285ee3598f7.js",
+    "service-worker.js": "/time-to-watch/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/time-to-watch/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.e06b02bb.chunk.css.map": "/time-to-watch/static/css/main.e06b02bb.chunk.css.map",
+    "static/js/2.b7258a78.chunk.js.LICENSE.txt": "/time-to-watch/static/js/2.b7258a78.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da522a46.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.b7258a78.chunk.js",
+    "static/css/main.e06b02bb.chunk.css",
+    "static/js/main.13c72169.chunk.js"
+  ]
+}
