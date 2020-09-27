@@ -1,6 +1,7 @@
 import React from 'react';
 import MovieCard from './MovieCard';
 import Movie from '../models/Movie';
+import { Container } from 'react-bootstrap';
 
 interface MovieCardListProps {
   movies: Movie[]
@@ -8,13 +9,15 @@ interface MovieCardListProps {
 
 function MovieCardList(props: MovieCardListProps) {
   return (
-    <>
-      {props.movies.map(movie => (
-        <div key={movie.id}>
-          <MovieCard movie={movie}/>
-        </div>)
-      )}
-    </>
+    <Container fluid>
+      <div className="d-flex flex-row flex-nowrap overflow-auto">
+        {props.movies.map(movie => (
+          <div key={movie.id}>
+            <MovieCard movie={movie}/>
+          </div>)
+        )}
+      </div>
+    </Container>
   );
 }
 

@@ -1,5 +1,4 @@
 import { discoverMovies } from './tmdbApi';
-import { DiscoverMovieRequest } from 'moviedb-promise/dist/request-types';
 
 const movieA = {
   id: 123456,

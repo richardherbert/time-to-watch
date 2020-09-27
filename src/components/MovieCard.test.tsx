@@ -6,7 +6,8 @@ import Movie from '../models/Movie';
 const movie: Movie = {
   id: 1,
   title: 'Test Title!',
-  runtime: 234
+  runtime: 234,
+  posterUrl: 'https://example.com/'
 }
 
 test('renders movie title', () => {
@@ -16,5 +17,5 @@ test('renders movie title', () => {
 
 test('renders movie runtime', () => {
   const { queryByText } = render(<MovieCard movie={movie}/>)
-  expect(queryByText(movie.runtime.toString())).toBeInTheDocument()
+  expect(queryByText(`Runtime: ${movie.runtime}`)).toBeInTheDocument()
 })

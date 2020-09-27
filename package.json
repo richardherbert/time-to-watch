@@ -4,12 +4,15 @@
   "private": true,
   "homepage": "https://wrherbert.github.io/time-to-watch",
   "dependencies": {
-    "@types/node": "^12.12.54",
+    "@types/node": "^12.12.62",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
+    "bootstrap": "^4.5.2",
     "gh-pages": "^2.2.0",
     "moviedb-promise": "^3.1.2",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.3.0",
+    "react-bootstrap-icons": "^1.0.0",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.3",
     "save": "^2.4.0",
@@ -43,6 +46,6 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "@types/jest": "^24.9.1",
-    "ts-jest": "^26.3.0"
+    "ts-jest": "^26.4.0"
   }
 }

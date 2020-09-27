@@ -53,13 +53,21 @@ function validateArguments(page: number, runtimeLessThanOrEqual: number) {
   }
 }
 
-function mapToMovie(movieResponse: MovieResponse, runtimeLimit: number) : Movie | undefined {
+function mapToMovie(movieResponse: MovieResponse, runtimeLimit: number) : Movie | undefined {  
   if (movieResponse.id && movieResponse.title && movieResponse.runtime && movieResponse.runtime <= runtimeLimit) {
     return { 
       id: movieResponse.id,
       title: movieResponse.title,
-      runtime: movieResponse.runtime
+      runtime: movieResponse.runtime,
+      posterUrl: buildImageUrl(movieResponse.poster_path, 185)
     }
+  }
+  return undefined
+}
+
+function buildImageUrl(imagePath: string | undefined, size: number): string | undefined {
+  if (imagePath) {
+    return `https://image.tmdb.org/t/p/w${size}/${imagePath}`
   }
   return undefined
 }
