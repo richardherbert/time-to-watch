@@ -2,7 +2,7 @@ module.exports = function( eleventyConfig ) {
 	eleventyConfig.setQuietMode( true );
 	eleventyConfig.setTemplateFormats( 'html,md' );
 
-	eleventyConfig.addPassthroughCopy( 'assets' );
+	eleventyConfig.addPassthroughCopy( './src/assets' );
 
 	eleventyConfig.addFilter( 'dump', function( anything ) {
 		console.log( 'dump:', anything );
