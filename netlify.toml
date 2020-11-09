@@ -1,0 +1,5 @@
+[build]
+  publish = '_site/'
+  command = 'npm run build'
+  functions = 'functions/'
+  environment = { NODE_ENV = 'production',  ELEVENTY_ENV = 'production' } # to enable Tailwind CSS to invoke PurgeCSS and Eleventy to know the environment
