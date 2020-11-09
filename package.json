@@ -4,7 +4,7 @@
 	"private": true,
 	"description": "Choose films to watch that are less than a specified running time",
 	"scripts": {
-		"watch": "npx @11ty/eleventy --serve --watch"
+		"watch": "npx @11ty/eleventy --input=./src/ --serve --watch"
 	},
 	"homepage": "https://wrherbert.github.io/time-to-watch#readme",
 	"devDependencies": {
