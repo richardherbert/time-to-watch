@@ -1,12 +1,14 @@
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
-  purge: [],
-  theme: {
-    extend: {},
-  },
-  variants: {},
-  plugins: [],
+	future: {
+		removeDeprecatedGapUtilities: true
+		,purgeLayersByDefault: true
+	}
+	,purge: [
+		'./_site/**/.html'
+	]
+	,theme: {
+		extend: {}
+	}
+	,variants: {}
+	,plugins: []
 }
