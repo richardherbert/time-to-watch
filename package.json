@@ -1,0 +1,7 @@
+{
+  "name": "time-to-watch",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Choose films to watch that are less than a specified running time",
+  "homepage": "https://wrherbert.github.io/time-to-watch#readme"
+}
