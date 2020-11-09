@@ -9,5 +9,8 @@
 	"homepage": "https://wrherbert.github.io/time-to-watch#readme",
 	"devDependencies": {
 		"@11ty/eleventy": "^0.11.1"
+	},
+	"dependencies": {
+		"tailwindcss": "^1.9.6"
 	}
 }
