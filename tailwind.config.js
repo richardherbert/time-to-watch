@@ -4,7 +4,7 @@ module.exports = {
 		,purgeLayersByDefault: true
 	}
 	,purge: [
-		'./_site/**/.html'
+		'./_site/**/*.html'
 	]
 	,theme: {
 		extend: {}
