@@ -4,9 +4,9 @@
 	"private": true,
 	"description": "Choose films to watch that are less than a specified running time",
 	"scripts": {
-		"build": "npm run tailwind && npm run eleventy"
-		,"tailwind": "npx tailwindcss build ./src/css/tailwind.css -o ./src/assets/css/tailwind.css"
+		"build": "npm run eleventy && npm run tailwind"
 		,"eleventy": "npx @11ty/eleventy --input=./src/"
+		,"tailwind": "npx tailwindcss build ./src/css/tailwind.css -o ./_site/assets/css/tailwind.css"
 		,"watch": "npx @11ty/eleventy --input=./src/ --serve --watch"
 	},
 	"homepage": "https://wrherbert.github.io/time-to-watch#readme",
